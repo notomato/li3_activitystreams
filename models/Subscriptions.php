@@ -2,7 +2,7 @@
 
 namespace li3_activitystreams\models;
 
-class Subscriptions extends \li3_activitystreams\models\StreamsBase {
+class Subscriptions extends \li3_activitystreams\models\Base {
 	
 	protected $_meta = array(
 		'key' => 'id'

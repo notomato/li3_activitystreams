@@ -2,7 +2,7 @@
 
 namespace li3_activitystreams\models;
 
-class Objects extends \li3_activitystreams\models\StreamsBase {
+class Objects extends \li3_activitystreams\models\Base {
 	
 	protected $_meta = array(
 		'key' => 'id'
@@ -15,6 +15,12 @@ class Objects extends \li3_activitystreams\models\StreamsBase {
 		'url'             => array('type' => 'string', 'length' => 255, 'default' => null),
 		'values'          => array('name' => 'longtext')
 	);
+	
+	public function getStream();
+	
+	public function subscribeToStream();
+	
+	public function unsubscribeFromStream();
 }
 
 ?>
